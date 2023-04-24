@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     }
     let result = configurecounter()
     override func viewDidLoad() {
+        ScoreLabel.text = "0"
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
 
