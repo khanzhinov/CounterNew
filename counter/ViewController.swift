@@ -8,35 +8,45 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var ScoreLabel: UILabel!
-    private func configurecounter() {
-     ScoreLabel.text = "0"
-    }
+    //переменные
+    var a = -1
     var Score: Int = 0 {
         didSet {
             updateScoreLabel()
         }
     }
+    
+    //аутлеты
+    
+    @IBOutlet var ScoreLabel: UILabel!
+    @IBOutlet var button: UIButton!
+    
+    //методы
+    
     private func updateScoreLabel() {
         ScoreLabel.text = "\(Score)"
     }
-    var a = -1
     private func schet() {
         if a == 0 {
             Score += 1
         }
     }
+    private func configurecounter() {
+        ScoreLabel.text = "0"
+    }
     
-    @IBOutlet var button: UIButton!
+    @IBAction func ButtonPushed(_ sender: Any) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         ScoreLabel.text = "0"
         
-       
-
+        
+        
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
 }
 
