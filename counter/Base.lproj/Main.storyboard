@@ -36,7 +36,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pha-Sg-xw1"/>
-                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpr-fq-4we"/>
                                 </connections>
                             </button>
                         </subviews>
